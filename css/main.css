@@ -549,10 +549,6 @@ footer {
 
 .overflow__hidden {
 	overflow: hidden;
-	-ms-overflow: hidden;
-	-webkit-overflow: hidden;
-	-moz-overflow: hidden;
-	-o-overflow: hidden;
 }
 
 .combo-express {
