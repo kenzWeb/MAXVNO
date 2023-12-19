@@ -90,7 +90,7 @@ main {
 .main__container {
 	display: flex;
 	flex-direction: column;
-	margin-top: 240px;
+	margin-top: clamp(7.5rem, 4.891rem + 13.04vw, 15rem);
 	align-items: start;
 }
 
@@ -324,6 +324,7 @@ footer {
 	background-color: #fff500;
 	border-radius: 5px;
 	transition: all 0.2s ease-in-out;
+	transform: translateX(20px);
 }
 
 .btn:after {
@@ -489,6 +490,30 @@ footer {
 
 	.footer__social {
 		margin-bottom: 50px;
+	}
+
+	.bg {
+		background: no-repeat url('../img/bg1.png'), lightgray 50%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100%;
+		z-index: 1;
+	}
+
+	.main__container {
+		text-align: center;
+		align-items: center;
+	}
+
+	.main__button {
+		display: flex;
+		justify-content: center;
+		width: 90%;
 	}
 }
 
