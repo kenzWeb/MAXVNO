@@ -412,6 +412,8 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	z-index: 100;
+	transform: translateY(50px);
+
 }
 
 .burger__nav-list {
@@ -447,7 +449,7 @@ footer {
 	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-top: 60px;
+	margin-top: 80px;
 }
 
 .hidden {
@@ -527,4 +529,8 @@ footer {
 
 .overflow__hidden {
 	overflow: hidden;
+	-ms-overflow: hidden;
+	-webkit-overflow: hidden;
+	-moz-overflow: hidden;
+	-o-overflow: hidden;
 }
