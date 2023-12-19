@@ -384,7 +384,7 @@ footer {
 
 .burger__wrapper {
 	position: absolute;
-	display: flex;
+	display: none;
 	text-align: center;
 	justify-content: center;
 	flex-direction: column;
@@ -464,6 +464,10 @@ footer {
 @media screen and (max-width: 1024px) {
 	.header__nav {
 		display: none;
+	}
+
+	.burger__wrapper {
+		display: flex;
 	}
 
 	.burger__button {
@@ -550,10 +554,10 @@ footer {
 }
 
 .overflow__hidden {
-	overflow: hidden;
 	touch-action: none;
-	-ms-touch-action: none;
-	-webkit-overflow-scrolling: touch;
+	-webkit-overflow-scrolling: none;
+	overflow: hidden;
+	overscroll-behavior: none;
 }
 
 .combo-express {
