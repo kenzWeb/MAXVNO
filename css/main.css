@@ -416,7 +416,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	z-index: 100;
-	transform: translateY(-50px);
+	transform: translateY(-90px);
 }
 
 .burger__nav-list {
@@ -451,7 +451,7 @@ footer {
 	font-weight: 700;
 	text-transform: uppercase;
 	position: absolute;
-	bottom: 10%;
+	bottom: 20%;
 	transform: translateX(-50%);
 	z-index: 1000;
 }
