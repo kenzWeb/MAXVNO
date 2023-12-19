@@ -448,7 +448,9 @@ footer {
 	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-top: 0px;
+	position: absolute;
+	bottom: 10%;
+	transform: translateX(-50%);
 	z-index: 1000;
 }
 
