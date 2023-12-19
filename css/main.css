@@ -197,6 +197,7 @@ main {
 
 .about__wrapper-ord {
 	background: #000;
+	z-index: -1;
 	backdrop-filter: blur(60px);
 	padding: clamp(1.188rem, 0.774rem + 2.07vw, 2.375rem)
 		clamp(0.75rem, 0.489rem + 1.3vw, 1.5rem);
@@ -412,8 +413,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	z-index: 100;
-	transform: translateY(50px);
-
+	transform: translateY(-50px);
 }
 
 .burger__nav-list {
@@ -423,7 +423,7 @@ footer {
 	flex-direction: column;
 	max-width: 700px;
 	margin: 0 auto;
-	gap: 90px;
+	gap: clamp(4rem, 3.652rem + 1.74vw, 5rem);
 }
 
 .burger__nav-item {
@@ -440,7 +440,6 @@ footer {
 		clamp(1rem, 0.652rem + 1.74vw, 2rem);
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
 	border-radius: 34px;
 	background: #fff500;
 	color: #000;
@@ -449,7 +448,7 @@ footer {
 	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-top: 80px;
+	margin-top: 0px;
 }
 
 .hidden {
@@ -481,6 +480,10 @@ footer {
 	.about__wrapper-lright {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.combo-express {
+		display: none;
 	}
 }
 
@@ -533,4 +536,8 @@ footer {
 	-webkit-overflow: hidden;
 	-moz-overflow: hidden;
 	-o-overflow: hidden;
+}
+
+.combo-express {
+
 }
