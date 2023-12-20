@@ -287,7 +287,7 @@ footer {
 }
 
 .footer__container {
-	width: 100%
+	width: 100%;
 }
 
 .footer__top {
@@ -466,8 +466,21 @@ footer {
 }
 
 .buy {
+	color: #000;
+	text-align: center;
+	padding: 18px 32px;
+	font-family: Red Rose;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
 	display: none;
 }
+
+.buy h4 {
+	font-size: 14px;
+}
+
 @media screen and (max-width: 1024px) {
 	.header__nav {
 		display: none;
@@ -483,6 +496,23 @@ footer {
 		height: 50px;
 	}
 
+	.about__combo-center {
+		font-size: 18px;
+	}
+
+	.overflow__hidden {
+		touch-action: none;
+		-webkit-overflow-scrolling: none;
+		overflow: hidden;
+		overscroll-behavior: none;
+		height: 100vh;
+		width: 100vw;
+		position: fixed;
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 780px) {
 	.about__wrapper-content {
 		display: flex;
 		flex-direction: column;
@@ -498,10 +528,6 @@ footer {
 		flex-direction: column;
 	}
 
-	.combo-express {
-		display: none;
-	}
-
 	.about__wrapper-combo {
 		background: url('../img/2.png'), lightgray 50% / cover no-repeat;
 		backdrop-filter: blur(60px);
@@ -512,15 +538,8 @@ footer {
 		padding: 14px;
 	}
 
-	.overflow__hidden {
-		touch-action: none;
-		-webkit-overflow-scrolling: none;
-		overflow: hidden;
-		overscroll-behavior: none;
-		height: 100vh;
-		width: 100vw;
-		position: fixed;
-		overflow: hidden;
+	.combo-express {
+		display: none;
 	}
 }
 
@@ -586,6 +605,31 @@ footer {
 
 	.connect {
 		display: none;
+	}
+
+	.about__money {
+		font-size: 14px;
+	}
+
+	.about__price {
+		font-size: 18px;
+	}
+
+	.combo__title {
+		font-size: 20px;
+	}
+
+	.combo__subtitle {
+		font-size: 12px;
+	}
+
+	.about__ord-right {
+		padding: 7px 7px 2px 7px;
+	}
+
+	.about__ord-right img{
+		width: 14px;
+		height: 14px;
 	}
 }
 
