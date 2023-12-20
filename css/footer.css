@@ -35,6 +35,11 @@ footer {
 	gap: clamp(1.5rem, 0.978rem + 2.61vw, 3rem);
 }
 
+.footer__social a {
+	width: 32px;
+	height: 32px;
+}
+
 .footer__buttom {
 	text-align: center;
 }
