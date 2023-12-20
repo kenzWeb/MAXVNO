@@ -557,6 +557,7 @@ footer {
 
 	.footer__logo {
 		margin-bottom: 25px;
+		font-weight: 400;
 	}
 
 	.footer__social {
