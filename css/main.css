@@ -507,6 +507,17 @@ footer {
 	.about__wrapper-ord {
 		padding: 14px;
 	}
+	
+	.overflow__hidden {
+		touch-action: none;
+		-webkit-overflow-scrolling: none;
+		overflow: hidden;
+		overscroll-behavior: none;
+		height: 100vh;
+		width: 100vw;
+		position: fixed;
+		overflow: hidden;
+	}
 }
 
 @media screen and (max-width: 560px) {
@@ -568,20 +579,8 @@ footer {
 	.buy {
 		display: flex;
 	}
-	
+
 	.connect {
 		display: none;
 	}
-}
-
-
-.overflow__hidden {
-	touch-action: none;
-	-webkit-overflow-scrolling: none;
-	overflow: hidden;
-	overscroll-behavior: none;
-	height: 100vh;
-	width: 100vw;
-	position: fixed;
-	overflow: hidden;
 }
