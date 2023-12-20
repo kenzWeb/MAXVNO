@@ -507,7 +507,7 @@ footer {
 	.about__wrapper-ord {
 		padding: 14px;
 	}
-	
+
 	.overflow__hidden {
 		touch-action: none;
 		-webkit-overflow-scrolling: none;
@@ -583,4 +583,72 @@ footer {
 	.connect {
 		display: none;
 	}
+}
+
+.main__container h2 {
+	animation-name: title;
+	animation-duration: 1s;
+}
+
+.main__container h3 {
+	opacity: 0;
+	animation-name: subtitle;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.main__button {
+	opacity: 0;
+	animation-name: subtitle;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes title {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes subtitle {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes button {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.about__wrapper-content {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+.about__wrapper-content.show {
+	opacity: 1;
+	transform: translateY(0);
 }
