@@ -39,16 +39,6 @@
 		flex-direction: column;
 	}
 
-	.about__wrapper-left {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.about__wrapper-lright {
-		display: flex;
-		flex-direction: column;
-	}
-
 	.about__wrapper-combo {
 		background: url('../img/2.png'), lightgray 50% / cover no-repeat;
 		backdrop-filter: blur(60px);
