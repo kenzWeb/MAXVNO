@@ -2,7 +2,7 @@ const burger = document.querySelector('.burger__button')
 const burgerWrapper = document.querySelector('.burger__wrapper')
 const bg = document.querySelector('.bg')
 const body = document.querySelector('body')
-const burgerItem = document.querySelector('.burger__nav-item')
+const burgerItem = document.querySelectorAll('.burger__nav-item')
 
 burger.addEventListener('click', () => {
 	burgerWrapper.classList.toggle('hidden')
@@ -11,11 +11,13 @@ burger.addEventListener('click', () => {
 	burger.classList.toggle('cross')
 })
 
-burgerItem.addEventListener('click', () => {
-	burgerWrapper.classList.remove('hidden')
-	bg.classList.remove('bg-black')
-	body.classList.remove('overflow__hidden')
-	burger.classList.remove('cross')
+burgerItem.forEach((i) => {
+	i.addEventListener('click', () => {
+		burgerWrapper.classList.add('hidden')
+		bg.classList.remove('bg-black')
+		body.classList.remove('overflow__hidden')
+		burger.classList.remove('cross')
+	})
 })
 
 // Якорь
