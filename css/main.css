@@ -281,9 +281,13 @@ footer {
 	padding-bottom: 25px;
 	background-color: black;
 	display: flex;
-	align-items: center;
+	width: 100%;
 	flex-direction: column;
 	border-radius: 15px 15px 0 0;
+}
+
+.footer__container {
+	width: 100%
 }
 
 .footer__top {
