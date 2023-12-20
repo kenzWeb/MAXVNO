@@ -7,6 +7,7 @@
 	flex-direction: column;
 }
 
+
 .about__wrapper-header {
 	display: flex;
 	align-items: center;
@@ -27,6 +28,7 @@
 .about__header-top img {
 	width: clamp(1.563rem, 1.019rem + 2.72vw, 3.125rem);
 	height: clamp(1.563rem, 1.019rem + 2.72vw, 3.125rem);
+	border-radius: 12px;
 }
 
 .about__wrapper-header-title {
